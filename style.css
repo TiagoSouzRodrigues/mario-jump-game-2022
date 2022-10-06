@@ -25,7 +25,7 @@ h3 {
 
 .game-board {
   border: 5px solid rgb(99, 95, 95);
-  width: 75%;
+  width: 90%;
   height: 420px;
   border-bottom: 24px solid rgb(3, 206, 47);
   margin: 100px 5px 30px 80px;
