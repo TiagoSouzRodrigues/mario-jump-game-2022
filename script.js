@@ -39,4 +39,4 @@ const loop =setInterval(()=>{
 
 },10);
 
-document.addEventListener('touch', jump);
+document.addEventListener('touchmove', jump);
