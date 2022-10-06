@@ -40,3 +40,5 @@ const loop =setInterval(()=>{
 },10);
 
 document.addEventListener('touchmove', jump);
+document.addEventListener('touchstart', jump);
+document.addEventListener('click', jump);
