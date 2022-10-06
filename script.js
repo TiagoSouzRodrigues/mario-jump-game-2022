@@ -12,6 +12,7 @@ const jump =() =>{
 
 }
 
+
 const loop =setInterval(()=>{
 
     const pipePosition = pipe.offsetLeft;
@@ -39,6 +40,8 @@ const loop =setInterval(()=>{
 
 },10);
 
-document.addEventListener('touchmove', jump);
+
+document.addEventListener('keydown', jump);
 document.addEventListener('touchstart', jump);
 document.addEventListener('click', jump);
+
