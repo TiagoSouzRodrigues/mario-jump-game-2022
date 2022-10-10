@@ -8,7 +8,7 @@ const jump =() =>{
    setTimeout(()=>{
     mario.classList.remove('jump');
 
-   },500);
+   },1000 );
 
 }
 
@@ -19,7 +19,7 @@ const loop =setInterval(()=>{
     const marioPosition = window.getComputedStyle(mario).bottom.replace('px', '');
     const cloudsPosition = window.getComputedStyle(clouds).left.replace('px', '');
 
-    if ( pipePosition <= 120 && pipePosition > 0 && marioPosition < 80 ){
+    if ( pipePosition <= 95 && pipePosition > 0 && marioPosition < 90  ){
         
         pipe.style.animation = 'none';    
         pipe.style.left = `${pipePosition}px`;
@@ -35,13 +35,13 @@ const loop =setInterval(()=>{
         mario.style.width ='75px'
         mario.style.marginLeft ='50px'
 
+
         clearInterval(loop);
+        
     }
-
+   
 },10);
-
 
 document.addEventListener('keydown', jump);
 document.addEventListener('touchstart', jump);
 document.addEventListener('click', jump);
-
