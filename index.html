@@ -1,23 +1,42 @@
-   <!DOCTYPE html>
+ <!DOCTYPE html>
  <html lang="pt-br">
  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="mario-logo.icon" type="mario-logo">
     <title>Mario Jump</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
+  
+    
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@100 & display=swap');
+      h3{
+        font-family: 'Montserrat' ;
+
+      }
+    </style>
      
  </head>
  <body>
+   
    <div class="game-board">
-     <div class="mario-title">
-       <img src="./images/Mario_Logo.svg" alt="Mario Bros ">
-      </div>
-      <img src="./images/clouds.png" class="clouds">
-      <img src="./images/pipe.png" class="pipe">
-      <img src="./images/mario.gif" class="mario"
-      <h3>Made by Tiago Rodrigues &copy;</h3    
-   </div> 
+     
+     <img src="./images/clouds.png" class="clouds">
+     <img src="./images/pipe.png" class="pipe">
+     <img src="./images/mario.gif" class="mario">
+     
+    </div>
+    <button  id="restart" onclick="window.location.reload()">
+      REINICIAR
+    </button>
+    
+    <div class="mario-title">
+      <img src="./images/Mario_Logo.svg" alt="Mario Bros ">
+      <h3>Made by <br> Tiago Rodrigues&copy;</h3>
+     </div>
+  
  </body>
  </html>
