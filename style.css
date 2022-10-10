@@ -1,4 +1,5 @@
- * {
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,26 +10,34 @@
   height: 29px;
   justify-items: center;
   align-items: center;
-  margin: 4px 0px 42px 16px;
+  justify-content: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 0;
 }
 
 h3 {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  color: #e8f8ff;
-  font-size: small;
-  font-style: italic;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
 
-  height: 2px;
-  margin-left: 8px;
-  margin-top: 6px;
+
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+
+  font-size: 0.9rem;
+  font-weight:10 ;
+  line-height: 1;
+  padding: 0 15px;
+  text-align: center;
 }
 
 .game-board {
+  display: block;
   border: 5px solid rgb(99, 95, 95);
-  width: 90%;
+  width: 100%;
   height: 420px;
   border-bottom: 24px solid rgb(3, 206, 47);
-  margin: 100px 5px 30px 60px;
   position: relative;
   overflow: hidden;
   background: linear-gradient(#10bafd, #e0f6ff);
@@ -59,6 +68,21 @@ h3 {
   animation: clouds-animation 20s infinite linear;
 }
 
+#restart {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: chartreuse;
+  border: 2px solid green;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 15px 25px;
+  text-align: center;
+  border-radius: 6px;
+}
 @keyframes pipe-animation {
   from {
     right: -80px;
@@ -73,7 +97,7 @@ h3 {
     bottom: 0;
   }
 
-  40% {
+  60% {
     bottom: 180px;
   }
   50% {
