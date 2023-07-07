@@ -18,7 +18,7 @@ const loop = setInterval(() => {
   const cloudsPosition = window.getComputedStyle(clouds).left.replace("px", "");
   const goPosition = window.getComputedStyle(clouds).left.replace("px", "");
 
-  const resPosition = window.getComputedStyle(clouds).left.replace("px", "");
+  const resPosition = window.getComputedStyle(rest).left.replace("px", "");
 
   if (pipePosition <= 95 && pipePosition > 0 && marioPosition < 90) {
     pipe.style.animation = "none";
