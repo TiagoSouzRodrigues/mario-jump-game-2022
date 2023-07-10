@@ -141,3 +141,18 @@ button{
     right: 100%;
   }
 }
+
+@media (max-width:500px){
+  .pipe{
+    width: 40px;
+  }
+
+  .mario{
+    width:75px;
+  }
+
+  .clouds{
+    width:200px;
+    heigth:100px;
+  }
+}
