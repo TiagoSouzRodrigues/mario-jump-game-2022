@@ -35,7 +35,7 @@ const loop = setInterval(() => {
 
     mario.src =
       "https://cdn.streamelements.com/uploads/3a66481b-e161-40ce-8e3c-8bb0f42145b4.png";
-    mario.style.width = "125px";
+    mario.style.width = "20%";
     mario.style.height = "135px";
     mario.style.marginLeft = "30px";
     go.innerText = "GAME OVER";
