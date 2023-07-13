@@ -81,12 +81,8 @@ div.mario-title img {
   padding: 10px;
   animation: clouds-animation 20s infinite linear;
 
-  z-index: 0;
 }
 
-button{
-    z-index: 10;
-}
 
 #restart {
   display: block;
@@ -103,6 +99,8 @@ button{
   padding: 15px 25px;
   text-align: center;
   border-radius: 6px;
+  position:relative;
+  z-index:9999;
 
   
 }
