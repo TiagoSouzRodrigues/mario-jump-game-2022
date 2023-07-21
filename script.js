@@ -1,4 +1,4 @@
- const mario = document.querySelector(".mario");
+const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
 const clouds = document.querySelector(".clouds");
 const go = document.getElementById("go");
@@ -33,8 +33,7 @@ const loop = setInterval(() => {
     go.style.animation = "none";
     go.style.left = `${goPosition}px`;
 
-    mario.src =
-      "https://cdn.streamelements.com/uploads/3a66481b-e161-40ce-8e3c-8bb0f42145b4.png";
+    mario.src ="https://cdn.streamelements.com/uploads/3a66481b-e161-40ce-8e3c-8bb0f42145b4.png";
     mario.style.width = "125px";
     mario.style.height = "135px";
     mario.style.marginLeft = "30px";
