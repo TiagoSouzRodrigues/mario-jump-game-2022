@@ -1,26 +1,37 @@
-const mario = document.querySelector(".mario");
+ const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
 const clouds = document.querySelector(".clouds");
-const go = document.getElementById("go");
-const rest = document.getElementById("restart");
+const game = document.getElementsByClassName('game-board');
+
+
+
+const score = document.querySelector('.score--value')
+const scr = document.querySelector('.score > h2')
+const finalScore = document.querySelector('.score-final ')
+const menu = document.querySelector('.menu--screen');
+const buttonPlay = document.querySelector('.btn-play')
 
 const jump = () => {
   mario.classList.add("jump");
 
+
   setTimeout(() => {
     mario.classList.remove("jump");
-  }, 1000);
+  }, 900);
+
+
 };
+const incrementScore = () => {
+  score.innerText = +score.innerText + 1
+}
 
 const loop = setInterval(() => {
   const pipePosition = pipe.offsetLeft;
   const marioPosition = window.getComputedStyle(mario).bottom.replace("px", "");
   const cloudsPosition = window.getComputedStyle(clouds).left.replace("px", "");
-  const goPosition = window.getComputedStyle(clouds).left.replace("px", "");
 
-  const resPosition = window.getComputedStyle(rest).left.replace("px", "");
+  if (pipePosition <= 105 && pipePosition > 0 && marioPosition < 95) {
 
-  if (pipePosition <= 95 && pipePosition > 0 && marioPosition < 90) {
     pipe.style.animation = "none";
     pipe.style.left = `${pipePosition}px`;
 
@@ -30,19 +41,31 @@ const loop = setInterval(() => {
     mario.style.animation = "none";
     mario.style.bottom = `${marioPosition}px`;
 
-    go.style.animation = "none";
-    go.style.left = `${goPosition}px`;
 
-    mario.src ="https://cdn.streamelements.com/uploads/3a66481b-e161-40ce-8e3c-8bb0f42145b4.png";
+
+    mario.src = "https://cdn.streamelements.com/uploads/3a66481b-e161-40ce-8e3c-8bb0f42145b4.png";
     mario.style.width = "125px";
     mario.style.height = "135px";
     mario.style.marginLeft = "30px";
-    go.innerText = "GAME OVER";
-    rest.style.opacity = "1";
+
+
+
+    menu.style.display = 'flex';
+    scr.style.display = 'none'
+    score.style.color = "greenyellow"
+    finalScore.style.display = 'flex'
+    finalScore.style.marginTop = '300px'
+
 
     clearInterval(loop);
+
+
   }
-}, 10);
+
+  incrementScore()
+
+}, 50);
+
 
 document.addEventListener("keydown", jump);
 document.addEventListener("touchstart", jump);
