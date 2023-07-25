@@ -1,4 +1,4 @@
- const mario = document.querySelector(".mario");
+const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
 const clouds = document.querySelector(".clouds");
 const game = document.getElementsByClassName('game-board');
